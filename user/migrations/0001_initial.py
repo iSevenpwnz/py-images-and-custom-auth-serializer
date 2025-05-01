@@ -2,7 +2,7 @@
 
 from django.db import migrations, models
 import django.utils.timezone
-import user.models
+from django.contrib.auth.models import UserManager
 
 
 class Migration(migrations.Migration):
@@ -116,7 +116,7 @@ class Migration(migrations.Migration):
                 "abstract": False,
             },
             managers=[
-                ("objects", user.models.UserManager()),
+                ("objects", UserManager()),
             ],
         ),
     ]
