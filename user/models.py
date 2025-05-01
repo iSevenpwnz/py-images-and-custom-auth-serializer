@@ -43,7 +43,8 @@ class User(AbstractUser):
         null=True,
         blank=True,
         help_text=_(
-            "Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only."
+            "Required. 150 characters or fewer. "
+            "Letters, digits and @/./+/-/_ only."
         ),
     )
     email = models.EmailField(_("email address"), unique=True)
