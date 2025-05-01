@@ -2,7 +2,6 @@
 
 from django.db import migrations, models
 import django.utils.timezone
-from django.contrib.auth.models import UserManager
 
 
 class Migration(migrations.Migration):
@@ -115,8 +114,5 @@ class Migration(migrations.Migration):
                 "verbose_name_plural": "users",
                 "abstract": False,
             },
-            managers=[
-                ("objects", UserManager()),
-            ],
         ),
     ]
